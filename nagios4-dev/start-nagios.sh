@@ -20,4 +20,4 @@ curl -udevops:x2016 -O "http://10.189.0.3:8081/artifactory/nagios-dev-local/conf
 cd $N4D_HOME
 
 docker build -t xabyss/nagios4:1.0 .
-docker run --name xabyss-nagios4 -p 0.0.0.0:8081:80 xabyss/nagios4:1.0
+docker run -d --name xabyss-nagios4 -p 0.0.0.0:8081:80 xabyss/nagios4:1.0
